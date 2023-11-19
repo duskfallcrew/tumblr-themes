@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC>
-   <!-- A custom theme built by eggdesign's theme builder (buildatheme.tumblr.com) with patched code used from https://tanaka-drew.tumblr.com/ -->
+   <!-- A custom theme built by eggdesign's theme builder (buildatheme.tumblr.com) with patched code used from https://tanaka-drew.tumblr.com/  as well as literally screaming at GPT at 4am (lies it was 8pm-->
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -30,6 +30,7 @@
             <meta name="text:border radius" content="4px"/>
             <meta name="text:font size" content="16px" />
             <meta name="image:background" content=""/>
+            <meta name="header:background" content=""/>
             <meta name="image:side image" content=""/>
             <meta name="color:night mode accent" content="#fff" />
             <meta name="if:Remove background image in night mode" content=""/>
@@ -242,6 +243,20 @@ $('body,html').animate({scrollTop:0},600);
                     --night-mode-accent: {color:night mode accent};
                      
                 }
+
+                 #header {
+            width: 700px;
+            margin: 20px auto;
+            background-color: #333;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        #header img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px 15px 0 0;
+            display: block;
                 
                 .night-mode-theme {
                     --background: #000!important;
@@ -673,9 +688,14 @@ $('body,html').animate({scrollTop:0},600);
                 {CustomCSS}
             </style>
         </head>
+
+   
         <body class="default {block:homepage}home{/block:homepage}{block:tagpage}tag{/block:tagpage}{block:searchpage}search{/block:searchpage}{block:submitpage}submit-{/block:submitpage}{block:AskPage}ask{/block:AskPage}-page">
             <button id="daynight-toggle"><span class="screen-reader">toggle day and night mode</span></button><div id="side-image"><img src="{image:side image}"></div>
             <main>
+               <header>  <div id="header">
+        <img src="YOUR_HEADER_IMAGE_URL" alt="Header Image">
+    </div></header>
             <aside>
                 <div class="sidebar-container sidebar-style-dash">
                         <div class="header-image">
