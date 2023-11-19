@@ -1,715 +1,699 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
-</head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- A custom theme built by eggdesign's theme builder (buildatheme.tumblr.com) --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;html&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;title&gt;{Title}&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;link rel="shortcut icon" href="{Favicon}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;link rel="alternate" type="application/rss+xml" href="{RSS}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{block:Description}&lt;meta name="description" content="{MetaDescription}" /&gt;{/block:Description}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{block:Options}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="color:background" content="#fff"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="color:posts" content="#fff"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="color:text" content="#000"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="color:links" content="#000" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="color:tags" content="#000" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="color:sidebar links" content="{AccentColor}"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="color:search background" content="#fff" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="color:search text" content="#000"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="color:borders" content="#ddd"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="text:border width" content="1px"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="text:border radius" content="4px"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="text:font size" content="16px" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="image:background" content=""/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="image:side image" content=""/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="color:night mode accent" content="#fff" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="if:Remove background image in night mode" content=""/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="if:full background" content=""/&gt;</p>
-<p class="p2"><span class="Apple-converted-space">             </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="select:Font" content="Helvetica" title="Helvetica" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="select:Font" content="Roboto" title="Roboto" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="select:Font" content="Favorit" title="Favorit" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="select:Font" content="Calluna" title="Calluna" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="select:Font" content="Fairwater" title="Fairwater" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;meta name="select:Font" content="Source Code Pro" title="Source Code Pro" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>{/block:Options}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>{NewPostStyles}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>const themed = localStorage.getItem('night-mode');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>if (themed === "enabled") {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>sessionStorage.setItem('night-mode', 'enabled');</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>document.documentElement.classList.add('night-mode-theme');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;script src="https://static.tumblr.com/svdghan/gFJrolu7g/daynight.js"&gt;&lt;/script&gt;</p>
-<p class="p2"><span class="Apple-converted-space">             </span></p>
-<p class="p1"><span class="Apple-converted-space">             </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">             </span>@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>* {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>box-sizing: border-box;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--background-image:<span class="Apple-converted-space">  </span>url({image:background});</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--background: {color:background};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--accent: {AccentColor};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--text: {color:text};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--borders: {color:borders};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--spacing: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--border-width: {text:border width};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--border-radius: {text:border radius};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--posts: {color:posts};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--tags: {color:tags};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--links: {color:links};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--sidebar-links: {color:sidebar links};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--search-background: {color:search background};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--search-text: {color:search text};</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--headerimage: url({HeaderImage});<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--invert: invert(0);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--night-mode-accent: {color:night mode accent};</p>
-<p class="p2"><span class="Apple-converted-space">                     </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.night-mode-theme {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--background: #000!important;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--accent: var(--night-mode-accent);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:ifRemoveBackgroundImageInNightMode}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--background-image: url('');</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/block:ifRemoveBackgroundImageInNightMode}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--text: white;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--posts: #222;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--invert: invert(1);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--links: var(--night-mode-accent);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>--tags: var(--night-mode-accent);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>font-family: {select:Font}, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>font-size: clamp(.92rem, {text:font size}, 20px);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>color: var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background: var(--background) var(--background-image) center center fixed;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:iffullbackground}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background-size: cover;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/block:iffullbackground}}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>#side-image {position:fixed; left: var(--spacing); bottom: var(--spacing);}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>#side-image img {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>max-width:350px;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>a {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>color: var(--links);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>article a {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>article a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>text-decoration: underline;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>article iframe, .tumblr_video_container {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>max-width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.blog-title {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>font-family: {TitleFont};</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>main, .pagination {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>align-items: flex-start;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>justify-content: space-around;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>main {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>max-width:1100px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin:auto;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>article, .pagination {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>position:relative;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>max-width: 540px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin: calc(var(--spacing) * 4) auto;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border: var(--border-width) solid var(--borders);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-radius: var(--border-radius);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background:var(--posts);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>aside .pagination {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin: var(--spacing) auto auto auto;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>article img {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>max-width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.link-container {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding: var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin:var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border:var(--border-width) solid var(--borders);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-radius: var(--border-radius);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.caption:empty, p:empty {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>display:none;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.reblog-header a {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>align-items:center;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.reblog-header img {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding-right: .4rem;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>max-height: 1.4rem;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.contained :is(header, footer, main) {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>max-width: 1000px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin: 1rem auto;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background: var(--background);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border: var(--border-width) solid var(--borders);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.contained header {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin-bottom: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding: var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.contained main {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>height: 70vh;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>overflow: auto;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.contained article, .contained .pagination {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>max-width: 500px;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.grid main {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>max-width: 98%;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.grid section {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>column-count: 2;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>break-inside: avoid;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>grid-gap: calc(var(--spacing) * 2);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin-bottom:var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.grid article {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>max-width: calc(100% - var(--spacing));</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin: var(--spacing) 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.original-post, .reblog-header, .tags, .post-info, .pagination, .quote-container, .replies, .question {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding: var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.reblog-content p, .reblog-content h2, .reblog-content h1 {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin-left: var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin-right: var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.quote-container, .replies, .question {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border: var(--border-width) solid var(--borders);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin: var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.description, aside h2 {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding: calc(var(--spacing) /2) 0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                   </span>#search-form input {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding: calc(var(--spacing) / 2);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width:100%;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background:var(--search-background);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin: calc(var(--spacing) /2) 0 0 0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border:var(--border-width) solid var(--borders);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-radius:var(--border-radius);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>color:var(--search-text);</p>
-<p class="p1"><span class="Apple-converted-space">                 </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>::placeholder {</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>color:var(--search-text);</p>
-<p class="p1"><span class="Apple-converted-space">                 </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.post-info, .like-and-reblog, .contained {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.pinned {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>font-weight:bold;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>color:var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.pinned {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>font-weight:bold;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.pinned-pin {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>position: absolute;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>right: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>top:-4px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding:0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>transform:rotate(45deg);</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                  </span></p>
-<p class="p1"><span class="Apple-converted-space">                  </span>.pinned-pin i {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width:2px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>font-size:0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>color:transparent;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>height:.4rem;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background:var(--accent)!important;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>display:block;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>position:absolute;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>left:0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin-left:calc(50% - 1px);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin-top:-.4rem;</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>.pinned-pin:before, .pinned-pin:after {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>content:'';</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-radius:.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>display:block;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>transform:translate(0, -1.4rem);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border:7px solid transparent;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-bottom:10px solid var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                  </span></p>
-<p class="p1"><span class="Apple-converted-space">                  </span>.pinned-pin:before {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>transform:translate(0,0);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-bottom-color: transparent;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-top:10px solid var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                   </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.like-and-reblog .reblog_button, .like-and-reblog .like_button:not(.liked) {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>filter: var(--invert);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>aside {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width: calc(30% - calc(var(--spacing) * 2));</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>height:100vh;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>position: sticky;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.sidebar-container {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background: var(--posts);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin: calc(var(--spacing) * 4) auto 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border: var(--border-width) solid var(--borders);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding:var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>max-width: 300px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-radius: var(--border-radius);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.sidebar-style-dash {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding:0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>text-align:center;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.sidebar-style-dash .pagination {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border:0 solid transparent;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.sidebar-style-dash :is(h2, div){</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding:var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.sidebar-style-dash h2 + div, .sidebar-style-dash div + div {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding-top:0;</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.sidebar-style-bubble {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background:transparent;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.bubble {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>flex-wrap:wrap;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>align-items:center;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.bubble-desc {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border:var(--border-width) solid var(--borders);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding: var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width:100%;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background:var(--posts);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-radius:.6rem;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-top-left-radius:0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin:var(--spacing) 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.header-image {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin-bottom: 24px!important;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.sidebar-style-bubble img {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width:48px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-radius:50%;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin-right:.4rem;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                 </span>{block:ShowHeaderImage}</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>{block:ShowAvatar}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>.header-image + * {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>margin-top:24px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>{/block:ShowAvatar}</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>{/block:ShowHeaderImage}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.header-image img {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width:48px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background:#facade;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>height:48px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:ShowHeaderImage}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>position:absolute;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>bottom: -24px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/block:ShowHeaderImage}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-radius:50%;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>section {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width: 70%;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.contained section {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width:60%;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.header-image {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:ShowHeaderImage}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width:100%;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>justify-content:center;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background: var(--headerimage) center center;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>aspect-ratio: 3/1;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background-size:cover;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/block:ShowHeaderImage}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>.reblog_button {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>margin-right: .6rem;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>.like_button {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>height:20px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.pages-container, .nav-container {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin: calc(var(--spacing) /4) 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>.pages-container a, .nav-container a, .pagination a, .tags a {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin-right: .4rem;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>color: var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>text-decoration:none;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>aside a {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>color: var(--sidebar-links);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.tags a {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>color: var(--tags);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.pages-container a {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>font-weight:bold;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>color:var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.reblogs a, .caption a {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>color:var(--accent);</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.tumblr_audio_player {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>@media only screen and (max-width: 1100px) {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>main, .contained main, section {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>aside, .sidebar-container{</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>max-width:100%;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>position:relative;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>.sidebar-container {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>max-width:90%;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>margin:var(--spacing) auto;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>article {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>max-width:90%;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>margin: var(--spacing) auto;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>#side-image {display: none;}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>.grid section {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>column-count: 1;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>.screen-reader {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>clip: rect(1px, 1px, 1px, 1px);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>clip-path: inset(50%);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>height: 1px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>margin: -1px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>position: absolute;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width: 1px;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>word-wrap: normal !important;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>#daynight-toggle {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>cursor:pointer;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background:;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>position:fixed;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>top:var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>left:var(--spacing);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>z-index:2;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>height:2rem;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>width:2rem;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border-radius:50%;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>background:white;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>border:var(--border-width) solid var(--borders);</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>flex-wrap:wrap;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>justify-content:center;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>align-items:center;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>#daynight-toggle:before {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>content:'☀';</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>#daynight-toggle.night-mode-toggle:before {</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>content:'';</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>width:1rem;</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>height:1rem;</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>transform:translate(-.32rem, -.32rem);</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>box-shadow: .32rem .32rem 0 0 black;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>{CustomCSS}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;body class="default {block:homepage}home{/block:homepage}{block:tagpage}tag{/block:tagpage}{block:searchpage}search{/block:searchpage}{block:submitpage}submit-{/block:submitpage}{block:AskPage}ask{/block:AskPage}-page"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="daynight-toggle"&gt;&lt;span class="screen-reader"&gt;toggle day and night mode&lt;/span&gt;&lt;/button&gt;&lt;div id="side-image"&gt;&lt;img src="{image:side image}"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;main&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;aside&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="sidebar-container sidebar-style-dash"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="header-image"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;form action="/search" method="get" id="search-form"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;input type="text" name="q" class="query" value="" placeholder="Search"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/form&gt; {block:ShowAvatar}&lt;img src="{PortraitURL-128}"&gt;{/block:ShowAvatar}&lt;/div&gt;<span class="Apple-converted-space">  </span>{block:ShowTitle}&lt;h2 class="blog-title"&gt;{Title}&lt;/h2&gt; {/block:ShowTitle}&lt;div class="description"&gt;{Description}&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="nav-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="/"&gt;{lang:Home}&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>{block:askenabled}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;a href="/ask"&gt;Ask&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>{/block:askenabled}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>{block:submissionsenabled}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;a href="/submit"&gt;Submit&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>{/block:submissionsenabled}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="/archive"&gt;Archive&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                      </span>{block:HasPages}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="pages-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>{block:Pages}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;a href="{URL}"&gt;{Label}&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>{/block:Pages}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>{/block:HasPages}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>{block:Pagination}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="pagination flex centered"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:previouspage}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="{previouspage}"&gt;Prev&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/block:previouspage}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>{block:JumpPagination length="5"}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>{block:CurrentPage}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="current-page"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{PageNumber}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>{/block:CurrentPage}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>{block:JumpPage}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;a href="{URL}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{PageNumber}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>{/block:JumpPage}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>{/block:JumpPagination}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:nextpage}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="{nextpage}"&gt;Next&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/block:nextpage}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>{/block:Pagination}</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt; <span class="Apple-converted-space">   </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/aside&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:SearchPage}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="reblogs"&gt;{lang:Found SearchResultCount results for SearchQuery}&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/block:SearchPage}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:TagPage}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="reblogs"&gt;{lang:Showing TagResultCount posts tagged Tag}&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/block:TagPage}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:DayPage}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="reblogs"&gt;{lang:Viewing everything posted on Month DayOfMonth Year}&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/block:DayPage}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:Posts}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- {block:NoRebloggedFrom}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/block:NoRebloggedFrom} --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:ContentSource}&lt;!-- {SourceURL}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:SourceLogo}&lt;img src="{BlackLogoURL}"width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" /&gt;{/block:SourceLogo}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo} --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/block:ContentSource}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;article id="post-{PostID}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>{block:PinnedPostLabel}&lt;div class="pinned pinned-pin"&gt;&lt;i&gt;&lt;/i&gt;&lt;/div&gt;{/block:PinnedPostLabel}</p>
-<p class="p2"><span class="Apple-converted-space">                         </span></p>
-<p class="p2"><span class="Apple-converted-space">                                </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{block:RebloggedFrom}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="reblog-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;a href="{permalink}" {block:isdeactivated}class="inactive"{/block:isdeactivated}&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;img src={ReblogRootPortraitURL-64} alt="{ReblogRootName}"&gt;<span class="Apple-converted-space">  </span>{ReblogRootName}</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{/block:RebloggedFrom}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{block:Photo}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;img src="{PhotoURL-HighRes}" alt="{photoalt}" class="photos"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{/block:Photo}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{block:Photoset}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{Photoset}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{/block:Photoset}</p>
-<p class="p2"><span class="Apple-converted-space">                                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{block:Panorama}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;img src="{photourl-panorama}" alt="{photoalt}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{/block:Panorama}</p>
-<p class="p2"><span class="Apple-converted-space">                                         </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{block:Quote}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="quote-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="quote"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                            </span>"{Quote}"</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="source"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                            </span>-{Source}</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{/block:Quote}</p>
-<p class="p2"><span class="Apple-converted-space">                                          </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{block:Chat}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;ul class="chat"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>{block:Lines}</p>
-<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                                </span>{block:Label}{Label}{/block:Label}<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                                </span>{Line}</p>
-<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>{/block:Lines}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{/block:Chat}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{block:link}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="link-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;a href="{URL}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                            </span>{Name}</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{/block:link}</p>
-<p class="p2"><span class="Apple-converted-space">                                              </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{block:Video}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{Video-700}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{/block:Video}</p>
-<p class="p2"><span class="Apple-converted-space">                                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{block:Audio}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{audioembed}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{/block:Audio}</p>
-<p class="p2"><span class="Apple-converted-space">         </span></p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{block:Answer}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="question"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>{Asker}: {Question}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{block:Answerer}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="replies"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>{Answerer}: {Answer}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{/block:Answerer}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{block:NotReblog}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="replies"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>{Replies}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{/block:NotReblog}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{/block:Answer}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;!-- captions<span class="Apple-converted-space">  </span>--&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="caption {block:notreblog} original-post {/block:notreblog}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{block:Text}</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>{block:Title}&lt;h2&gt;{Title}&lt;/h2&gt;{/block:Title}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{/block:Text}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{block:notreblog}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{block:caption}{Caption}{/block:caption}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{block:Text}{body}{/block:Text}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{/block:notreblog}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{block:Rebloggedfrom}</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>{block:Reblogs}</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="reblogs"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>{block:IsNotOriginalEntry}<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;div class="reblog-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                                </span>&lt;a href="{permalink}" {block:isdeactivated}class="inactive"{/block:isdeactivated}&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                                      </span>&lt;img src={PortraitURL-64} alt="{username}"&gt;<span class="Apple-converted-space">  </span>{username}</p>
-<p class="p1"><span class="Apple-converted-space">                                                    </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>{/block:IsNotOriginalEntry}<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;div class="reblog-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                                </span>{Body}</p>
-<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                        </span>{/block:Reblogs}</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>{/block:RebloggedFrom}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>{block:Date}&lt;div class="post-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="note-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;a href="{Permalink}"&gt;Posted &lt;a href="/day/{year}/{MonthNumberWithZero}/{DayOfMonth}"&gt;{TimeAgo}&lt;/a&gt; with &lt;a href="{Permalink}"&gt; {NoteCountwithLabel}&lt;/a&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="like-and-reblog"&gt; {ReblogButton} {LikeButton}&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;{/block:Date} <span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                            </span>{block:Hastags}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="tags"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{block:Tags}</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;a href="{TagURL}"&gt;#{Tag}&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>{/block:Tags}</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>{/block:Hastags}</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>{PostNotes}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/article&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>{/block:Posts}</p>
-<p class="p1"><span class="Apple-converted-space">                     </span>&lt;/section&gt;&lt;/main&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/html&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-</body>
-</html>
+<!DOCTYPE html>
+    <!-- A custom theme built by eggdesign's theme builder (buildatheme.tumblr.com) -->
+    <html> 
+        <head>
+            <title>{Title}</title>
+            <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+            <link rel="shortcut icon" href="{Favicon}">
+            <link rel="alternate" type="application/rss+xml" href="{RSS}">
+            {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+            {block:Options}
+            <meta name="color:background" content="#fff"/>
+            <meta name="color:posts" content="#fff"/>
+            <meta name="color:text" content="#000"/>
+            <meta name="color:links" content="#000" />
+            <meta name="color:tags" content="#000" />
+            <meta name="color:sidebar links" content="{AccentColor}"/>
+            <meta name="color:search background" content="#fff" />
+            <meta name="color:search text" content="#000"/>
+            <meta name="color:borders" content="#ddd"/>
+            <meta name="text:border width" content="1px"/>
+            <meta name="text:border radius" content="4px"/>
+            <meta name="text:font size" content="16px" />
+            <meta name="image:background" content=""/>
+            <meta name="image:side image" content=""/>
+            <meta name="color:night mode accent" content="#fff" />
+            <meta name="if:Remove background image in night mode" content=""/>
+            <meta name="if:full background" content=""/>
+             
+            <meta name="select:Font" content="Helvetica" title="Helvetica" />
+            <meta name="select:Font" content="Roboto" title="Roboto" />
+            <meta name="select:Font" content="Favorit" title="Favorit" />
+            <meta name="select:Font" content="Calluna" title="Calluna" />
+            <meta name="select:Font" content="Fairwater" title="Fairwater" />
+            <meta name="select:Font" content="Source Code Pro" title="Source Code Pro" />
+            {/block:Options}
+
+            {NewPostStyles}
+            <script>
+                const themed = localStorage.getItem('night-mode');
+                if (themed === "enabled") {
+                    sessionStorage.setItem('night-mode', 'enabled');
+                    document.documentElement.classList.add('night-mode-theme');
+                }
+            </script>
+            <script src="https://static.tumblr.com/svdghan/gFJrolu7g/daynight.js"></script>
+             
+             <style>
+             @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+                * {
+                    box-sizing: border-box;
+                }
+                :root {
+                    --background-image:  url({image:background});
+                    --background: {color:background};
+                    --accent: {AccentColor};
+                    --text: {color:text};
+                    --borders: {color:borders};
+                    --spacing: 1rem;
+                    --border-width: {text:border width};
+                    --border-radius: {text:border radius};
+                    --posts: {color:posts};
+                    --tags: {color:tags};
+                    --links: {color:links};
+                    --sidebar-links: {color:sidebar links};
+                    --search-background: {color:search background};
+                    --search-text: {color:search text};
+                    --headerimage: url({HeaderImage}); 
+                    --invert: invert(0);
+                    --night-mode-accent: {color:night mode accent};
+                     
+                }
+                
+                .night-mode-theme {
+                    --background: #000!important;
+                    --accent: var(--night-mode-accent);
+                    {block:ifRemoveBackgroundImageInNightMode}
+                    --background-image: url('');
+                    {/block:ifRemoveBackgroundImageInNightMode}
+                    --text: white;
+                    --posts: #222;
+                    --invert: invert(1);
+                    --links: var(--night-mode-accent);
+                    --tags: var(--night-mode-accent);
+                }
+                
+                body {
+                    font-family: {select:Font}, sans-serif;
+                    font-size: clamp(.92rem, {text:font size}, 20px);
+                    margin: 0;
+                    height: 100vh;
+                    color: var(--text);
+                    background: var(--background) var(--background-image) center center fixed;
+                    {block:iffullbackground}
+                    background-size: cover;
+                    {/block:iffullbackground}}
+                
+                #side-image {position:fixed; left: var(--spacing); bottom: var(--spacing);}
+                
+                #side-image img {
+                    max-width:350px;
+                }
+                a {
+                    color: var(--links);
+                }
+                
+                article a {
+                    text-decoration: none;
+                }
+
+                article a:hover {
+                    text-decoration: underline;
+                }
+
+                article iframe, .tumblr_video_container {
+                    max-width: 100%;
+                }
+
+                .blog-title {
+                    font-family: {TitleFont};
+                }
+
+                main, .pagination {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: space-around;
+                }
+
+                main {
+                    max-width:1100px;
+                    margin:auto;
+                }
+
+                article, .pagination {
+                    width: 100%;
+                    position:relative;
+                    max-width: 540px;
+                    margin: calc(var(--spacing) * 4) auto;
+                    border: var(--border-width) solid var(--borders);
+                    border-radius: var(--border-radius);
+                    background:var(--posts);
+                }
+                aside .pagination {
+                    margin: var(--spacing) auto auto auto;
+                }
+
+                article img {
+                    max-width: 100%;
+                }
+
+                .link-container {
+                    padding: var(--spacing);
+                    margin:var(--spacing);
+                    border:var(--border-width) solid var(--borders);
+                    border-radius: var(--border-radius);
+                }
+
+                .caption:empty, p:empty {
+                    display:none;
+                }
+
+                .reblog-header a {
+                    display: flex;
+                    align-items:center;
+                }
+
+                .reblog-header img {
+                    padding-right: .4rem;
+                    max-height: 1.4rem;
+                }
+                .contained :is(header, footer, main) {
+                    width: 100%;
+                    max-width: 1000px;
+                    margin: 1rem auto;
+                    background: var(--background);
+                    border: var(--border-width) solid var(--borders);
+                }
+
+                .contained header {
+                    margin-bottom: 0;
+                    padding: var(--spacing);
+                }
+                .contained main {
+                    height: 70vh;
+                    overflow: auto;
+                    
+                }
+
+                .contained article, .contained .pagination {
+                    max-width: 500px;
+                }
+
+                .grid main {
+                    max-width: 98%;
+                }
+
+                .grid section {
+                    column-count: 2;
+                    break-inside: avoid;
+                    grid-gap: calc(var(--spacing) * 2);
+                    margin-bottom:var(--spacing);
+                }
+
+                .grid article {
+                    display: inline-block;
+                    max-width: calc(100% - var(--spacing));
+                    margin: var(--spacing) 0;
+                }
+
+                .original-post, .reblog-header, .tags, .post-info, .pagination, .quote-container, .replies, .question {
+                    padding: var(--spacing);
+                }
+
+                .reblog-content p, .reblog-content h2, .reblog-content h1 {
+                    margin-left: var(--spacing);
+                    margin-right: var(--spacing);
+                }
+
+                .quote-container, .replies, .question {
+                    border: var(--border-width) solid var(--borders);
+                    margin: var(--spacing);
+                }
+
+                .description, aside h2 {
+                    padding: calc(var(--spacing) /2) 0;
+                    margin: 0;
+                }
+                   #search-form input {
+                    padding: calc(var(--spacing) / 2);
+                    width:100%;
+                    background:var(--search-background);
+                    margin: calc(var(--spacing) /2) 0 0 0;
+                    border:var(--border-width) solid var(--borders);
+                    border-radius:var(--border-radius);
+                    color:var(--search-text);
+                 }
+                ::placeholder {
+                     color:var(--search-text);
+                 }
+                
+                .post-info, .like-and-reblog, .contained {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .pinned {
+                    font-weight:bold;
+                    color:var(--accent);
+                }
+
+                .pinned {
+                    font-weight:bold;
+                }
+                .pinned-pin {
+                    position: absolute;
+                    right: 0;
+                    top:-4px;
+                    padding:0;
+                    transform:rotate(45deg);
+                  }
+                  
+                  .pinned-pin i {
+                    width:2px;
+                    font-size:0;
+                    color:transparent;
+                    height:.4rem;
+                    background:var(--accent)!important;
+                    display:block;
+                    position:absolute;
+                    left:0;
+                    margin-left:calc(50% - 1px);
+                    margin-top:-.4rem;
+                  }
+                  .pinned-pin:before, .pinned-pin:after {
+                    content:'';
+                    border-radius:.2rem;
+                    display:block;
+                    transform:translate(0, -1.4rem);
+                    border:7px solid transparent;
+                    border-bottom:10px solid var(--accent);
+                  }
+                  
+                  .pinned-pin:before {
+                    transform:translate(0,0);
+                    border-bottom-color: transparent;
+                    border-top:10px solid var(--accent);
+                  }
+                   
+                .like-and-reblog .reblog_button, .like-and-reblog .like_button:not(.liked) {
+                    filter: var(--invert);
+                }
+                aside {
+                    width: calc(30% - calc(var(--spacing) * 2));
+                    height:100vh;
+                    position: sticky;
+                    top: 0;
+                }
+
+                .sidebar-container {
+                    background: var(--posts);
+                    margin: calc(var(--spacing) * 4) auto 0 auto;
+                    border: var(--border-width) solid var(--borders);
+                    padding:var(--spacing);
+                    max-width: 300px;
+                    border-radius: var(--border-radius);
+                }
+                .sidebar-style-dash {
+                    padding:0;
+                    text-align:center;
+                }
+
+                .sidebar-style-dash .pagination {
+                    border:0 solid transparent;
+                }
+                .sidebar-style-dash :is(h2, div){
+                    padding:var(--spacing);
+                }
+                .sidebar-style-dash h2 + div, .sidebar-style-dash div + div {
+                    padding-top:0;
+                  }
+
+                .sidebar-style-bubble {
+                    padding: 0;
+                    border: 0;
+                    background:transparent;
+                }
+                
+                .bubble {
+                    display:flex;
+                    flex-wrap:wrap;
+                    align-items:center;
+                }
+            
+                .bubble-desc {
+                    border:var(--border-width) solid var(--borders);
+                    padding: var(--spacing);
+                    width:100%;
+                    background:var(--posts);
+                    border-radius:.6rem;
+                    border-top-left-radius:0;
+                    margin:var(--spacing) 0;
+                }
+
+                .header-image {
+                    margin-bottom: 24px!important;
+                }
+                
+                .sidebar-style-bubble img {
+                    width:48px;
+                    border-radius:50%;
+                    margin-right:.4rem;
+                }
+
+                 {block:ShowHeaderImage}
+                  {block:ShowAvatar}
+                    .header-image + * {
+                        margin-top:24px;
+                    }
+                  {/block:ShowAvatar}
+                  {/block:ShowHeaderImage}
+
+                .header-image img {
+                    width:48px;
+                    background:#facade;
+                    height:48px;
+                    {block:ShowHeaderImage}
+                    position:absolute;
+                    bottom: -24px;
+                    {/block:ShowHeaderImage}
+                    border-radius:50%;
+                }
+                section {
+                    width: 70%;
+                }
+
+                .contained section {
+                    width:60%;
+                }
+
+                .header-image {
+                    position: relative;
+                    {block:ShowHeaderImage}
+                    display:flex;
+                    width:100%;
+                    justify-content:center;
+                    background: var(--headerimage) center center;
+                    aspect-ratio: 3/1;
+                    background-size:cover;
+                    {/block:ShowHeaderImage}
+                }
+                    .reblog_button {
+                        margin-right: .6rem;
+                    } 
+                    .like_button {
+                        height:20px;
+                    }
+                
+                .pages-container, .nav-container {
+                    margin: calc(var(--spacing) /4) 0;
+                }
+                .pages-container a, .nav-container a, .pagination a, .tags a {
+                    display: inline-block;
+                    margin-right: .4rem;
+                    color: var(--text);
+                    text-decoration:none;
+                }
+
+                aside a {
+                    color: var(--sidebar-links);
+                }
+
+                .tags a {
+                    color: var(--tags);
+                }
+
+                .pages-container a {
+                    font-weight:bold;
+                    color:var(--accent);
+                }
+
+                .reblogs a, .caption a {
+                    color:var(--accent);
+                }
+
+                .tumblr_audio_player {
+                    width: 100%;
+                }
+
+                @media only screen and (max-width: 1100px) {
+                    main, .contained main, section {
+                        width: 100%;
+                        height: auto;
+                    }
+                     aside, .sidebar-container{
+                        width: 100%;
+                        max-width:100%;
+                        height: auto;
+                        position:relative;
+                    }
+                    .sidebar-container {
+                        max-width:90%;
+                        margin:var(--spacing) auto;
+                    }
+                    
+                    article {
+                        max-width:90%;
+                        margin: var(--spacing) auto;
+                    }
+                    #side-image {display: none;}
+                    .grid section {
+                        column-count: 1;
+                    }
+
+                }
+
+                .screen-reader {
+                    border: 0;
+                    clip: rect(1px, 1px, 1px, 1px);
+                    clip-path: inset(50%);
+                    height: 1px;
+                    margin: -1px;
+                    overflow: hidden;
+                    padding: 0;
+                    position: absolute;
+                    width: 1px;
+                    word-wrap: normal !important;
+                }
+                #daynight-toggle {
+                    cursor:pointer;
+                    background:;
+                    position:fixed;
+                    top:var(--spacing);
+                    left:var(--spacing);
+                    z-index:2;
+                    height:2rem;
+                    width:2rem;
+                    border-radius:50%;
+                    background:white;
+                    display:flex;
+                    border:var(--border-width) solid var(--borders);
+                    flex-wrap:wrap;
+                    justify-content:center;
+                    align-items:center;
+                }
+                
+                #daynight-toggle:before {
+                    content:'☀';
+                }
+                
+                #daynight-toggle.night-mode-toggle:before {
+                  content:'';
+                  width:1rem;
+                  height:1rem;
+                  transform:translate(-.32rem, -.32rem);
+                  border-radius: 50%;
+                  box-shadow: .32rem .32rem 0 0 black;
+                }
+                
+                {CustomCSS}
+            </style>
+        </head>
+        <body class="default {block:homepage}home{/block:homepage}{block:tagpage}tag{/block:tagpage}{block:searchpage}search{/block:searchpage}{block:submitpage}submit-{/block:submitpage}{block:AskPage}ask{/block:AskPage}-page">
+            <button id="daynight-toggle"><span class="screen-reader">toggle day and night mode</span></button><div id="side-image"><img src="{image:side image}"></div>
+            <main>
+            <aside>
+                <div class="sidebar-container sidebar-style-dash">
+                        <div class="header-image">
+                        <form action="/search" method="get" id="search-form">
+                            <input type="text" name="q" class="query" value="" placeholder="Search">
+                        </form> {block:ShowAvatar}<img src="{PortraitURL-128}">{/block:ShowAvatar}</div>  {block:ShowTitle}<h2 class="blog-title">{Title}</h2> {/block:ShowTitle}<div class="description">{Description}</div>
+                    <div class="nav-container">
+                        <a href="/">{lang:Home}</a>
+                        {block:askenabled}
+                            <a href="/ask">Ask</a>
+                        {/block:askenabled}
+                        {block:submissionsenabled}
+                            <a href="/submit">Submit</a>
+                        {/block:submissionsenabled}
+                        <a href="/archive">Archive</a>
+                    </div> 
+                      {block:HasPages}
+                        <div class="pages-container">
+                            {block:Pages}
+                                <a href="{URL}">{Label}</a>
+                            {/block:Pages}
+                            </div>
+                        {/block:HasPages}
+                {block:Pagination}
+                <div class="pagination flex centered">
+                    {block:previouspage}
+                    <a href="{previouspage}">Prev</a>
+                    {/block:previouspage}
+                        {block:JumpPagination length="5"}
+                            {block:CurrentPage}
+                            <span class="current-page">
+                                {PageNumber}
+                            </span>
+                            {/block:CurrentPage}
+                            {block:JumpPage}
+                            <a href="{URL}">
+                                {PageNumber}
+                            </a>
+                            {/block:JumpPage}
+                        {/block:JumpPagination}
+                    {block:nextpage}
+                    <a href="{nextpage}">Next</a>
+                    {/block:nextpage}
+                </div>
+                {/block:Pagination}
+                
+                    </div>    
+                </aside>
+                <section>
+                    {block:SearchPage}
+                        <article>
+                            <div class="reblogs">{lang:Found SearchResultCount results for SearchQuery}</div>
+                        </article>
+                    {/block:SearchPage}
+                    {block:TagPage}
+                        <article>
+                            <div class="reblogs">{lang:Showing TagResultCount posts tagged Tag}</div>
+                        </article>
+                    {/block:TagPage}
+                    {block:DayPage}
+                        <article>
+                            <div class="reblogs">{lang:Viewing everything posted on Month DayOfMonth Year}</div>
+                        </article>
+                    {/block:DayPage}
+                    {block:Posts}
+                    <!-- {block:NoRebloggedFrom}
+                    {block:RebloggedFrom}{ReblogParentName}{/block:RebloggedFrom}
+                    {/block:NoRebloggedFrom} -->
+                    {block:ContentSource}<!-- {SourceURL}
+                    {block:SourceLogo}<img src="{BlackLogoURL}"width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo}
+                    {block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo} -->
+                    {/block:ContentSource}
+                    <article id="post-{PostID}">
+                        {block:PinnedPostLabel}<div class="pinned pinned-pin"><i></i></div>{/block:PinnedPostLabel}
+                         
+                                
+                                {block:RebloggedFrom}
+                                    <div class="reblog-header">
+                                        <a href="{permalink}" {block:isdeactivated}class="inactive"{/block:isdeactivated}>
+                                        <img src={ReblogRootPortraitURL-64} alt="{ReblogRootName}">  {ReblogRootName}
+                                        </a>
+                                    </div>
+                                {/block:RebloggedFrom}
+                                {block:Photo}
+                                    <img src="{PhotoURL-HighRes}" alt="{photoalt}" class="photos">
+                                {/block:Photo}
+
+                                {block:Photoset}
+                                    {Photoset}
+                                {/block:Photoset}
+                                    
+                                {block:Panorama}
+                                    <img src="{photourl-panorama}" alt="{photoalt}">
+                                {/block:Panorama}
+                                         
+                                {block:Quote}
+                                    <div class="quote-container">
+                                        <div class="quote">
+                                            "{Quote}"
+                                        </div>
+                                        <div class="source">
+                                            -{Source}
+                                        </div>
+                                    </div>
+                                {/block:Quote}
+                                          
+                                {block:Chat}
+                                    <ul class="chat">
+                                        {block:Lines}
+                                            <li>
+                                                {block:Label}{Label}{/block:Label} 
+                                                {Line}
+                                            </li>
+                                        {/block:Lines}
+                                    </ul>
+                                {/block:Chat}
+
+                                {block:link}
+                                    <div class="link-container">
+                                        <a href="{URL}">
+                                            {Name}
+                                        </a>
+                                    </div>
+                                {/block:link}
+                                              
+                                {block:Video}
+                                    {Video-700}
+                                {/block:Video}
+                                    
+                                {block:Audio}
+                                    {audioembed}
+                                {/block:Audio}
+         
+                                {block:Answer}
+                                    <div class="question">
+                                        {Asker}: {Question}
+                                    </div>
+                                    {block:Answerer}
+                                    <div class="replies">
+                                        {Answerer}: {Answer}
+                                    </div>
+                                    {/block:Answerer}
+                                {block:NotReblog}
+                                    <div class="replies">
+                                        {Replies}
+                                    </div>
+                                {/block:NotReblog}
+                                {/block:Answer}
+                                <!-- captions  -->
+                                <div class="caption {block:notreblog} original-post {/block:notreblog}">
+                                    {block:Text}
+                                        {block:Title}<h2>{Title}</h2>{/block:Title}
+                                    {/block:Text}
+                                    {block:notreblog}
+                                    {block:caption}{Caption}{/block:caption}
+                                    {block:Text}{body}{/block:Text}
+                                    {/block:notreblog}
+                                    {block:Rebloggedfrom}
+                                        {block:Reblogs}
+                                        <div class="reblogs">
+                                        {block:IsNotOriginalEntry} 
+                                            <div class="reblog-header">
+                                                <a href="{permalink}" {block:isdeactivated}class="inactive"{/block:isdeactivated}>
+                                                      <img src={PortraitURL-64} alt="{username}">  {username}
+                                                    </a>
+                                            </div>
+                                        {/block:IsNotOriginalEntry} 
+                                            <div class="reblog-content">
+                                                {Body}
+                                            </div>
+                                        </div>
+                                        {/block:Reblogs}
+                                    {/block:RebloggedFrom}
+                                </div>
+                            {block:Date}<div class="post-info">
+                                <div class="note-info">
+                                    <a href="{Permalink}">Posted <a href="/day/{year}/{MonthNumberWithZero}/{DayOfMonth}">{TimeAgo}</a> with <a href="{Permalink}"> {NoteCountwithLabel}</a></div>
+                                <div class="like-and-reblog"> {ReblogButton} {LikeButton}</div>
+                                </div>{/block:Date}  
+                            {block:Hastags}
+                            <div class="tags">
+                                {block:Tags}
+                                <a href="{TagURL}">#{Tag}</a>
+                                {/block:Tags}
+                            </div>
+                        {/block:Hastags}
+                        {PostNotes}
+                    </article>
+                    {/block:Posts}
+                     </section></main>
+            </body>
+        </html>
+            
