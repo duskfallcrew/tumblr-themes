@@ -1,9 +1,17 @@
-<!DOCTYPE html>
-    <!-- A custom theme built by eggdesign's theme builder (buildatheme.tumblr.com) -->
-    <html> 
-        <head>
-            <title>{Title}</title>
-            <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+<!DOCTYPE html PUBLIC>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+ 
+<head>
+ 
+<title>{Title}</title>
+
+<link rel="shortcut icon" href="{Favicon}">
+
+<link rel="preload" href="//assets.tumblr.com/images/full_page_vignette.png" as="image">
+  
             <link rel="shortcut icon" href="{Favicon}">
             <link rel="alternate" type="application/rss+xml" href="{RSS}">
             {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
@@ -43,6 +51,169 @@
                 }
             </script>
             <script src="https://static.tumblr.com/svdghan/gFJrolu7g/daynight.js"></script>
+
+    <!-- Google Fonts Script -->
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,700;1,9..40,400;1,9..40,700&family=Golos+Text:wght@400;700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,400;1,6..12,700&family=Onest:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!-- Styled Tooltips Script -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:90,
+tip_fade_speed:600,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+
+<!-- Font Awesome Script -->
+ 
+<script src="https://kit.fontawesome.com/880d7a6556.js" crossorigin="anonymous"></script>
+
+<!-- Tumblr Controls Script --->
+
+<script>
+$(document).ready(function(){
+$('.controls-button').click(function(){
+$('body').toggleClass('controls-click');
+});
+});
+</script>
+
+<!-- NPF images fix v3.0 by @glenthemes [2021] 💌 git.io/JRBt7 -->
+
+<script src="//npf-images-v3.github.io/script.js"></script>
+
+<link rel="stylesheet" href="//npf-images-v3.github.io/recon.css">
+<style tmblr-npf>
+:root {
+--NPF-Caption-Spacing: 1em;
+--NPF-Image-Spacing: 5px;
+}
+</style>
+
+<link rel="stylesheet" media="screen" href="//assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css">
+
+<!--✻✻✻✻✻✻  npf audio player by @glenthemes  ✻✻✻✻✻✻-->
+
+<script src="//tmblr-npf-audio.gitlab.io/s/init.js"></script>
+
+<link href="//tmblr-npf-audio.gitlab.io/s/base.css" rel="stylesheet">
+
+<script>
+tumblr_npf_audio({
+emptyTitleText: "",
+emptyArtistText: "",
+emptyAlbumText: "",
+titleLabel: "",    
+artistLabel: "",
+albumLabel: "",
+});
+</script>
+
+<!-- Unnest Captions Script -->
+
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script src="https://static.tumblr.com/wgg6svp/OoTofxa0c/unnest.min.js"></script>
+
+<script> 
+$(function(){  $('.entries').unnest({
+yourCaption: ".text, .caption", 
+wrapName: ".tumblr_parent", 
+newCaptionUsername: false, 
+originalPostCaptionUsername: false,
+tumblrAvatars: true, 
+tumblrAvatarClass: ".tumblr_avatar", 
+usernameColon: false
+}); 
+}); 
+</script>
+
+<!-- Inline Images Resizing Script -->
+
+<script>
+$(".tmblr-full, figure").each(function(){
+var imgWidth = $(this).attr("data-orig-width"),
+img = $(this).find("img"),
+imgSrc = img.attr("src");
+$('figure').css({'margin-left':'0','margin-right':'0','display':'inline-block'});
+if (imgWidth >= 500){
+img.attr("src",imgSrc.replace("_500.","_1280."));
+$('.tmblr-full img, figure img').css({'width':'auto','height':'auto','vertical-align':'middle'});
+}
+});  
+</script>
+
+<!-- PXU Script -->
+
+<link href="https://static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css"/>
+
+<script src="https://static.tumblr.com/qudkd6d/Az6nkemqr/pxuphotoset.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.photo-slideshow').pxuPhotoset({
+lightbox: true,
+rounded: false,
+gutter: '1px',
+borderRadius: '0px',
+photoset: '.photo-slideshow',
+photoWrap: '.photo-data',
+photo: '.pxu-photo'
+});
+});
+</script>
+
+<!-- Responsive Tumblr Videos Script -->
+
+<script src="https://rawgit.com/robinpx/tumblr/master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
+ 
+<script>
+$(document).ready(function() {
+flexibleFrames($(".video"));  
+});
+</script>
+
+<!-- Hide & Show Script -->
+ 
+<script>
+$(document).ready(function(){
+$(".tags").hide();
+$(".tags-title").click(function(){
+$(this).next(".tags").slideToggle('fast');
+});
+});
+</script>
+
+<!-- Scroll To Top Script -->
+
+<script type="text/javascript">
+$(function() {      
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#top').fadeIn();         
+} 
+else {
+$('#top').fadeOut();      
+}
+});
+$('#top').click(function() {
+$('body,html').animate({scrollTop:0},600);
+});
+});
+</script>
              
              <style>
              @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
