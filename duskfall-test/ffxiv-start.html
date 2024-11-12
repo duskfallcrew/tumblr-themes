@@ -80,6 +80,25 @@
                     color: var(--links);
                 }
                 
+                header {
+                    margin:var(--spacing) auto;
+                    max-width:1100px;
+                    padding:var(--spacing);
+                    background:var(--posts);
+                    border: var(--border-width) solid var(--borders);
+                    border-radius:var(--border-radius);
+                }
+                
+                footer {
+                    width:100%;
+                    margin:var(--spacing) auto;
+                    max-width:1100px;
+                    padding:var(--spacing);
+                    background:var(--posts);
+                    border: var(--border-width) solid var(--borders);
+                    border-radius:var(--border-radius);
+                }
+                
                 article a {
                     text-decoration: none;
                 }
@@ -360,6 +379,10 @@
                         height:20px;
                     }
                 
+                    header {
+                        width: 100%;
+                    }
+                
                 .pages-container, .nav-container {
                     margin: calc(var(--spacing) /4) 0;
                 }
@@ -433,7 +456,8 @@
                 {CustomCSS}
             </style>
         </head>
-        <body class="grid {block:homepage}home{/block:homepage}{block:tagpage}tag{/block:tagpage}{block:searchpage}search{/block:searchpage}{block:submitpage}submit-{/block:submitpage}{block:AskPage}ask{/block:AskPage}-page"><div id="side-image"><img src="{image:side image}"></div>
+        <body class="grid {block:homepage}home{/block:homepage}{block:tagpage}tag{/block:tagpage}{block:searchpage}search{/block:searchpage}{block:submitpage}submit-{/block:submitpage}{block:AskPage}ask{/block:AskPage}-page"><div id="side-image"><img src="{image:side image}"></div>  <header></header>
+                 
             <main>
             <aside>
                 <div class="sidebar-container sidebar-style-bubble">
@@ -625,7 +649,13 @@
                     {/block:nextpage}
                 </div>
                 {/block:Pagination}
-                 </section></main>
+                 </section><footer>
+                false
+                false
+                false
+                false
+                </footer></main>
             </body>
         </html>
+            
             
