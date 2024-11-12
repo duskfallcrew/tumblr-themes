@@ -1,0 +1,11 @@
+Credits:
+All FFXIV icons were BORROWED from the Consolegames wiki here:
+https://ffxiv.consolegameswiki.com/wiki
+
+Egg theme designer:
+https://cornetespoir.github.io/build-a-theme/
+
+The UI/UX itself is from in game screenshots either by myself or just various websites.
+These aren’t going to be credited because at the time of writing 7.1 maintenance is going on and I’m not able to log in and do my screenshots (Lies it’s two hours from now I’m just lazy.) 
+
+This is in reference to the fact the FF7 style one we found didn’t work right for NPF, and we. Were determined to make our own :D. 
