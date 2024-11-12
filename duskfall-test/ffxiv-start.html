@@ -221,6 +221,19 @@
                     padding: calc(var(--spacing) /2) 0;
                     margin: 0;
                 }
+                   #search-form input {
+                    padding: calc(var(--spacing) / 2);
+                    width:100%;
+                    background:var(--search-background);
+                    margin: calc(var(--spacing) /2) 0 0 0;
+                    border:var(--border-width) solid var(--borders);
+                    border-radius:var(--border-radius);
+                    color:var(--search-text);
+                 }
+                ::placeholder {
+                     color:var(--search-text);
+                 }
+                
                 .post-info, .like-and-reblog, .contained {
                     display: flex;
                     flex-wrap: wrap;
@@ -235,40 +248,9 @@
                 .pinned {
                     font-weight:bold;
                 }
-                .pinned-pin {
-                    position: absolute;
-                    right: 0;
-                    top:-4px;
-                    padding:0;
-                    transform:rotate(45deg);
-                  }
-                  
-                  .pinned-pin i {
-                    width:2px;
-                    font-size:0;
-                    color:transparent;
-                    height:.4rem;
-                    background:var(--accent)!important;
-                    display:block;
-                    position:absolute;
-                    left:0;
-                    margin-left:calc(50% - 1px);
-                    margin-top:-.4rem;
-                  }
-                  .pinned-pin:before, .pinned-pin:after {
-                    content:'';
-                    border-radius:.2rem;
-                    display:block;
-                    transform:translate(0, -1.4rem);
-                    border:7px solid transparent;
-                    border-bottom:10px solid var(--accent);
-                  }
-                  
-                  .pinned-pin:before {
-                    transform:translate(0,0);
-                    border-bottom-color: transparent;
-                    border-top:10px solid var(--accent);
-                  }
+                .pinned-default {
+                    padding:var(--spacing);
+                }
                    
                 .like-and-reblog .reblog_button, .like-and-reblog .like_button:not(.liked) {
                     filter: var(--invert);
@@ -456,7 +438,10 @@
                 {CustomCSS}
             </style>
         </head>
-        <body class="grid {block:homepage}home{/block:homepage}{block:tagpage}tag{/block:tagpage}{block:searchpage}search{/block:searchpage}{block:submitpage}submit-{/block:submitpage}{block:AskPage}ask{/block:AskPage}-page"><div id="side-image"><img src="{image:side image}"></div>  <header></header>
+        <body class="grid {block:homepage}home{/block:homepage}{block:tagpage}tag{/block:tagpage}{block:searchpage}search{/block:searchpage}{block:submitpage}submit-{/block:submitpage}{block:AskPage}ask{/block:AskPage}-page"><div id="side-image"><img src="{image:side image}"></div>  <header>
+                        <form action="/search" method="get" id="search-form">
+                            <input type="text" name="q" class="query" value="" placeholder="Search">
+                        </form></header>
                  
             <main>
             <aside>
@@ -510,7 +495,7 @@
                     {block:NoSourceLogo}{SourceLink}{/block:NoSourceLogo} -->
                     {/block:ContentSource}
                     <article id="post-{PostID}">
-                        {block:PinnedPostLabel}<div class="pinned pinned-pin"><i></i></div>{/block:PinnedPostLabel}
+                        {block:PinnedPostLabel}<div class="pinned pinned-default"><i></i>{PinnedPostLabel}</div>{/block:PinnedPostLabel}
                          
                                 
                                 {block:RebloggedFrom}
@@ -657,5 +642,4 @@
                 </footer></main>
             </body>
         </html>
-            
             
